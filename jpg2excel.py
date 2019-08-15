@@ -24,7 +24,7 @@ def jpg2excel(fp):
 		for col in range(w):
 			cell_format = workbook.add_format()
 			cell_format.set_bg_color(hex_colors[index])
-			worksheet.write(row, col, ., cell_format)
+			worksheet.write(row, col, ".", cell_format)
 			index += 1
 	print("Done! Closing file.")
 	workbook.close()
